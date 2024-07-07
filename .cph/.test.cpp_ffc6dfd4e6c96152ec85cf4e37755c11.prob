@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\test.cpp","tests":[{"id":1705679133952,"input":"2\n1 1 10\n10 10 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\test.cpp","group":"local","local":true}

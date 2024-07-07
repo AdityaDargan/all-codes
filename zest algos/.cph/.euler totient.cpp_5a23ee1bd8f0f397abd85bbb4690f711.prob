@@ -1,0 +1,1 @@
+{"name":"Local: euler totient","url":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\zest algos\\euler totient.cpp","tests":[{"id":1719412507519,"input":"3\naabb\naaaaaa\nabcdefg","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\zest algos\\euler totient.cpp","group":"local","local":true}

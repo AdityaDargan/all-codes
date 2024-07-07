@@ -1,0 +1,1 @@
+{"name":"Local: EVEQODD","url":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\codechef\\EVEQODD.cpp","tests":[{"id":1656514765670,"input":"3\n3\n1 2 3 4 5 6\n3\n1 3 4 8 4 8\n3\n1 5 3 5 6 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\codechef\\EVEQODD.cpp","group":"local","local":true}

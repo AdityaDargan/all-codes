@@ -1,0 +1,13 @@
+preorder - 
+
+stack<tree*> st;
+st.push(root)
+
+while(!st.empty()){
+    temp=st.top();
+    st.pop();
+    st.push(temp->right);
+    st.push(temp->left);
+}
+
+

@@ -1,0 +1,48 @@
+postorder - 
+
+
+    vector<int> postorderTraversal(TreeNode* root) {
+        vector<int> ans;
+        stack<TreeNode*> st;
+        if(root==NULL){
+            return ans;
+        }
+        
+        st.push(root);
+        TreeNode * cur=root->left;
+        TreeNode * temp=root;
+        while(!st.empty()){
+            if(cur!=NULL){
+                st.push(cur);
+                cur=cur->left;
+            }
+            else{
+                temp=st.top();
+                if(temp->right!=NULL){
+                    cur=temp->right;
+                }
+                else{
+                    st.pop();
+                    ans.push_back(temp->val);
+                    if(st.empty()){
+                        break;
+                    }
+                    cur=st.top();
+                    
+                    while(temp==cur->right){
+                        ans.push_back(cur->val);
+                        st.pop();
+                        if(st.empty()){
+                            break;
+                        }
+                        temp=cur;
+                        cur=st.top();
+                    }
+                    if(temp==cur->left){
+                        cur=cur->right;
+                    }
+                }
+            }
+        }
+        return ans;
+    }

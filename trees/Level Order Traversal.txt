@@ -1,0 +1,13 @@
+Level Order Traversal
+
+queue<tree> q
+
+q.push(root)
+vector<int> traversal
+while(!q.empty){
+    tree node=q.pop()
+    q.push(node->left)
+    q.push(node->right)
+
+    traversal.push(node->val)
+}

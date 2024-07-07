@@ -1,0 +1,1 @@
+{"name":"Local: ORPERM","url":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\ORPERM.cpp","tests":[{"id":1653690744973,"input":"3\n2\n0 1\n4 5\n3\n4 1 2\n4 5 2\n4\n9 13 12 8\n11 10 14 15","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\adity\\OneDrive\\Desktop\\C++\\ORPERM.cpp","group":"local","local":true}

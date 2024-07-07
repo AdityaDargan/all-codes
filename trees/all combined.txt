@@ -1,0 +1,30 @@
+preorder / inorder / postorder combined - 
+
+stack<pair<int,int>> st; 
+// stack of pair of(node,num)
+
+make 3 lists - preorder, inorder, postorder
+
+push(1,1) in stack
+
+while(!st.empty()):
+    if(top[num]==1)
+        temp = top
+        preorder append(temp)
+        temp.num++
+        push(temp->left)
+
+    if(top[num]==2)
+        temp=top
+        preorder append(temp)
+        temp.num++
+        push(temp->right)
+
+    if(top[num]==3)
+        temp=pop
+        postorder append(temp)
+        top.pop()
+
+    
+
+

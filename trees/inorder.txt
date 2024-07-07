@@ -1,0 +1,15 @@
+inorder - 
+
+
+stack<tree*> st;
+st.push(root)
+cur = root
+while(!st.empty()){
+    if(cur->left!=NULL)
+        st.push(cur->left)
+    else
+        temp=st.pop()
+        ans.push_back(temp)
+        cur=temp->right
+        st.push(cur)
+}
