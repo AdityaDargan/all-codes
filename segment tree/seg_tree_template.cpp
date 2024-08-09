@@ -33,11 +33,26 @@ class segTree{
         seg[ind] = seg[2*ind+1] + seg[2*ind+2];
         return;
     }
-
+    void update(int ind,int low,int high,int index,int val){
+        // no overlap
+        if( index<low || index>high ){
+            return;
+        }
+        // overlap is there
+        if(low==high && low==index){
+            seg[ind] = val;
+            return;
+        }
+        int mid = (low+high)/2;
+        update(2*ind+1,low,mid,index,val);
+        update(2*ind+2,mid+1,high,index,val);
+        seg[ind] = seg[2*ind+1] + seg[2*ind+2];
+        return;
+    }
     ll query(ll ind,ll low,ll high,ll l,ll r){
         // No Overlap
         if(l>high || r<low){
-            return INT_MAX;
+            return 0;
         }
         // Full Overlap
         if(low>=l && high<=r){

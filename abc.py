@@ -1,7 +1,12 @@
-import numpy as np
+L = [1, 3, -1, 4, -2, 5, 3]
+try:
+	n=10
+	for i in range(n):
+	   if L[i] < 0:
+	      L[i] = 0
+except IndexError:
+	for i in range(n - len(L)):
+	   L.append(0)
 
-def softmax(xs):
-    return np.exp(xs) / sum(np.exp(xs))
-
-xs = np.array([4,12,10])
-print(softmax(xs)) # [0.0021657, 0.00588697, 0.11824302, 0.87370431]
+finally:
+	print(L)
