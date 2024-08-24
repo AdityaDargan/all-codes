@@ -17,29 +17,30 @@ using namespace std;
 int n;
 vector<int> fen;
 void update(int i,int val){
-    while(i<n){
+    while(i<=n){
         fen[i]+=val;
         i = i + (i & (-i));
     }
     return;
 }
-int sum(int ind){
+int query(int ind){
     int ans = 0;
-    while(ind!=0){
+    while(ind>0){
         ans+=fen[ind];
         ind = ind - (ind & (-ind));
+        // this removes the last set bit 
+        // ind & (-ind) gives the last set bit 10100 -> 00100
     }
     return ans;
 }
 
 int main(){
     cin>>n;
-    fen.resize(n,0);
-    vector<int> v(n);
-    for(int i=0;i<n;i++){
+    fen.resize(n+1,0);
+    vector<int> v(n+1);
+    for(int i=1;i<n;i++){
         cin>>v[i];
         update(i,v[i]);
     }
-    cout<<sum(12)<<endl;
-    cout<<sum(14)<<endl;
+    cout<<query(12)<<endl;
 }
