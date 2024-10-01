@@ -34,6 +34,8 @@ int query(int ind){
     return ans;
 }
 
+
+// everything is 1 indexed here
 int main(){
     cin>>n;
     fen.resize(n+1,0);
