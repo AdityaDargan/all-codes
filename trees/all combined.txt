@@ -16,7 +16,7 @@ while(!st.empty()):
 
     if(top[num]==2)
         temp=top
-        preorder append(temp)
+        inorder append(temp)
         temp.num++
         push(temp->right)
 
@@ -24,7 +24,3 @@ while(!st.empty()):
         temp=pop
         postorder append(temp)
         top.pop()
-
-    
-
-

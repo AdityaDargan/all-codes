@@ -27,10 +27,11 @@ vector <ll> dijkstra(vector<vector<pair<ll,ll>>> adj, ll s){
     
     while(!st.empty()){
         auto it = *(st.begin());
-        st.erase(it);
         
         ll distance = it.first;
         ll node = it.second;
+
+        st.erase(it);
         
         for(auto i:adj[node]){
             ll nextNode = i.first;

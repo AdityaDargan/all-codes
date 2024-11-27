@@ -5,9 +5,8 @@ st.push(root)
 
 while(!st.empty()){
     temp=st.top();
+    pritn(temp)
     st.pop();
     st.push(temp->right);
     st.push(temp->left);
 }
-
-

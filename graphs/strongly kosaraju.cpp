@@ -5,6 +5,9 @@ do a dfs of the graph and when you return from a value put that in a stack so th
 
 kahin se bhi start ho dfs pr vo order of stack same rhega 
 
+above is kind of topological sort
+as in actual topo sort, cycle can't be there but in this cycle is present
+
 ab scc1 -> scc2 -> scc3 -> scc4 
 
 ab reverse all the edges in graph 
