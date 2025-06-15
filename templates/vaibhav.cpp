@@ -118,6 +118,7 @@ int phi(int n)
         result -= result / n;
     return result;
 }
+
 vector<int> sieve(1e6 + 1);
 vector<int> smallestprimesieve()
 {

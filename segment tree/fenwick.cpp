@@ -40,7 +40,7 @@ int main(){
     cin>>n;
     fen.resize(n+1,0);
     vector<int> v(n+1);
-    for(int i=1;i<n;i++){
+    for(int i=1;i<=n;i++){
         cin>>v[i];
         update(i,v[i]);
     }
